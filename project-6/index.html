@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font-Awsome cdn -->
+    <script src="https://kit.fontawesome.com/64bd0d6f87.js" crossorigin="anonymous"></script>
+
+    <!-- DaisyUi & TailwindCss cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+
+<body class="">
+    <!-- START: Header -->
+    <header class="mx-20">
+        <!-- NAVbar -->
+        <div class="navbar bg-base-100 w-full mx-auto">
+            <div class="navbar-start">
+                <!-- ham-burger: manu responsive _ sm -->
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <!-- logo & brand name -->
+                <div class="flex items-center gap-2">
+                    <img src="assets/logo.webp" alt="">
+                    <a class="font-bold text-xl">Peddy</a>
+                </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <!-- manue responsive _ md & lg -->
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <!-- btn: profile -->
+                <a class="btn rounded-full bg-base-100">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- END: Header -->
+
+
+    <!-- START: Main -->
+    <main class="mx-20">
+        <!-- Banner Section -->
+        <section class="flex flex-col justify-center text-center max-w-[800px] w-full mx-auto">
+            <h5 class="text-md font-bold text-gray-500 my-6 mx-auto">Bringing Families Together ❤️‍🔥 </h5>
+            <h2 class="text-6xl font-bold text-black w-[700px] mx-auto">Your Path to Adoption Starts Here</h2>
+            <p class="w-11/12 mx-auto my-6 text-sm">It is a long established fact that a reader will be distracted by
+                the
+                readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.
+            </p>
+            <button class="btn bg-teal-900 text-white w-fit mx-auto px-10">View More</button>
+            <img class="w-11/12 mx-auto my-12" src="assets/pet.webp" alt="">
+        </section>
+
+
+        <!-- Adopt your best friend: Options -->
+        <section class="flex flex-col justify-center text-center max-w-[800px] w-full mx-auto">
+            <!-- Texts -->
+            <div class="texts text-center">
+                <h3 class="text-2xl font-semibold text-black my-6 mx-auto">Adopt Your Best Friend</h3>
+                <p class="max-w-[600px] w-3/4 mx-auto my-6 text-sm">It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at its layout. The point of using Lorem
+                    Ipsum is that it has a.</p>
+            </div>
+            <!-- Pet categories button -->
+            <div id="categories" class="md:flex justify-center"></div>
+        </section>
+
+        <!-- Adopt your best friend: Adoption relevants -->
+        <section class="bg-base-100 w-full mx-auto">
+            <div id="pets" class="flex flex-col lg:flex-row gap-5 items-start">
+                <!-- petCards.js -->
+                <div id="pet-cards" class=" py-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-auto">
+                </div>
+                <!-- liked.js -->
+                <div id="liked" class="max-w-[450px] md:max-w-[650px] h-fit grid w-full lg:w-[500px] grid-cols-1 md:grid-cols-2 gap-2 border-y-2 lg:border-2 p-5 lg:rounded-xl mt-5 mx-auto">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- END: Main -->
+
+
+    <!-- START: Footer -->
+    <footer class="bg-black w-full mx-auto">
+        <section class="flex justify-between text-white mx-32 py-10">
+            <!-- contacts -->
+            <div>
+                <!-- logo & brand -->
+                <div class="flex items-center gap-2">
+                    <img src="assets/logo.webp" alt="">
+                    <a class="font-bold text-2xl">Peddy</a>
+                </div>
+                <!-- texts -->
+                <div>
+                    <p class="my-2 text-sm">Location: av. Washington 165, NY CA 54003</p>
+                    <p class="my-2 text-sm">Phone: +31 85 964 47 25</p>
+                    <p class="my-2 text-sm">Email: info@yourdomain.com</p>
+                    <p class="my-2 text-sm">Openings hours: 9.00 AM - 5.00 PM</p>
+                </div>
+                <!-- social media icon -->
+                <div class="flex items-center gap-2">
+                    <img class="w-8" src="assets/youtube.png" alt="">
+                    <img class="w-8" src="assets/igram.png" alt="">
+                    <img class="w-7" src="assets/fb.png" alt="">
+                    <img class="w-8" src="assets/x.png" alt="">
+                </div>
+            </div>
+
+            <!-- useful links -->
+            <div>
+                <h6 class="font-bold text-lg">Useful Link</h6>
+                <p class="text-sm text-gray-400 my-2">Home</p>
+                <p class="text-sm text-gray-400 my-2">About Us</p>
+                <p class="text-sm text-gray-400 my-2">Animals</p>
+                <p class="text-sm text-gray-400 my-2">Foundation</p>
+                <p class="text-sm text-gray-400 my-2">Contact</p>
+            </div>
+
+            <!-- drop message -->
+            <div class="w-48">
+                <h6 class="font-bold mb-3">Drop A Message</h6>
+                <input class="bg-gray-800 text-gray-400 text-sm rounded-lg w-full py-1.5 pl-5 my-1" type="text" placeholder="Enter Your Mail">
+                <button class="btn btn-sm bg-teal-900 text-white text-xs rounded-lg w-full border-none my-1">Subscribe</button>
+            </div>
+        </section>
+    </footer>
+    <!-- END: Footer -->
+
+
+    <script src="js/index.js"></script>
+    <script src="js/test.js"></script>
+</body>
+
+</html>
